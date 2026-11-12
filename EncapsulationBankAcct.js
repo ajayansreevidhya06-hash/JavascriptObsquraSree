@@ -28,17 +28,18 @@ class EncapsulationBankAcct
     }  
 
 }
-const backAcctObj=new EncapsulationBankAcct("sree",10000)
-backAcctObj.accountHolder="vidhya"
-console.log(backAcctObj.accountHolder)
+const bankAcctObj=new EncapsulationBankAcct("sree",10000)
+bankAcctObj.accountHolder="vidhya"
+console.log(bankAcctObj.accountHolder)
 
-//backAcctObj.#balance=100   //Property '#balance' is not accessible outside class 'EncapsulationBankAcct' because it has a private identifier.ts(18013)
+//bankAcctObj.#balance=100   //Property '#balance' is not accessible outside class 'EncapsulationBankAcct' because it has a private identifier.ts(18013)
 //to overcome this issue-use getter and setter methods
 
-backAcctObj.getBalance()
-backAcctObj.deposit(500)
-backAcctObj.getBalance()
+bankAcctObj.getBalance()
+bankAcctObj.deposit(500)
+bankAcctObj.getBalance()
 
-
-backAcctObj.withdraw(100)
-backAcctObj.getBalance()
+bankAcctObj.withdraw(100)
+bankAcctObj.getBalance()
+bankAcctObj.withdraw(50)
+bankAcctObj.getBalance()
